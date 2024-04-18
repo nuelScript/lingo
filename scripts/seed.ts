@@ -56,20 +56,6 @@ const main = async () => {
         courseId: 1,
         order: 1,
       },
-      {
-        id: 2,
-        title: "Numbers",
-        description: "Learn how to count",
-        courseId: 1,
-        order: 2,
-      },
-      {
-        id: 3,
-        title: "Food",
-        description: "Learn how to order food",
-        courseId: 1,
-        order: 3,
-      },
     ]);
 
     await db.insert(schema.lessons).values([
@@ -78,6 +64,30 @@ const main = async () => {
         unitId: 1,
         order: 1,
         title: "Nouns",
+      },
+      {
+        id: 2,
+        unitId: 1,
+        order: 2,
+        title: "Verbs",
+      },
+      {
+        id: 3,
+        unitId: 1,
+        order: 3,
+        title: "Nouns",
+      },
+      {
+        id: 4,
+        unitId: 1,
+        order: 4,
+        title: "Verbs",
+      },
+      {
+        id: 5,
+        unitId: 1,
+        order: 5,
+        title: "Verbs",
       },
     ]);
 
