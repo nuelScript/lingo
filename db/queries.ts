@@ -29,6 +29,7 @@ export const getUnits = cache(async () => {
     return [];
   }
 
+  // TODO: Confirm whether order is needed
   const data = await db.query.units.findMany({
     where: eq(units.courseId, userProgress.activeCourseId),
     with: {
